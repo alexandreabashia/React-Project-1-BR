@@ -11,7 +11,7 @@ function BirthdayCard() {
 
     return (
         <div style={style}>
-            <h3>5 Birthdays today</h3>
+            <h3>7 Birthdays today</h3>
             <User />
         </div>
     )
