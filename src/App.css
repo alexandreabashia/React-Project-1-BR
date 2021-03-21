@@ -1,10 +1,5 @@
-body {
-  margin: 0;
-}
-
-
 .App {
-  background-color: #F28AB2;
+  background-color: #f28ab2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,7 +7,71 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  text-align: center;
-  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+.birthdayCount {
+  color: #102a42;
+}
+
+.birthdayCard {
+  padding: 10px 20px 10px 20px;
+  width: 400px;
+  height: 640px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.card {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 85px;
+  height: 85px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 50%;
+
+}
+
+button {
+  width: 100%;
+  height: 7%;
+  font-size: 1.3rem;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.1em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #f28ab2;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+  outline: none;
+}
+
+button:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.age {
+  font-size: .9rem;
+}

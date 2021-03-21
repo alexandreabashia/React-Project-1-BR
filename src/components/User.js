@@ -2,6 +2,7 @@ import React from 'react'
 
 function User() {
 
+
     const allUsers = [
         {
             id: 1,
@@ -39,19 +40,17 @@ function User() {
                 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
         }
     ]
-
-    const style = {
-        width: '100px'
-    }
     return (
         <div>
             {
                 allUsers.map(function (user) {
                     return (
-                        <div>
-                            <img style={style} src={user.image} alt='photo'/>
-                            <div>{user.name}</div>
-                            <div>{user.age}</div>
+                        <div className='card'>
+                            <img src={user.image} alt='photo' />
+                            <div className='nameAndAge'>
+                                <div className='name'>{user.name}</div>
+                                <div className='age'>{user.age} Years</div>
+                            </div>
                         </div>
                     )
                 })
