@@ -1,13 +1,18 @@
 import React from 'react';
 import User from './User';
+import Data from './Data';
 
-function BirthdayCard() {
+function BirthdayCard({ users, setUsers }) {
+
+    function onClearlistener(){
+        setUsers([])
+    }
 
     return (
-        <div class='birthdayCard'>
-            <h3 className='birthdayCount'>7 Birthdays today</h3>
-            <User />
-            <button>Clear All</button>
+        <div className='birthdayCard'>
+            <h3 className='birthdayCount'>{users.length} Birthdays today</h3>
+            <User users={users} setUsers={setUsers} />
+            <button onClick={onClearlistener}>Clear All</button>
         </div>
     )
 }
