@@ -18,7 +18,7 @@ body {
   color: #102a42;
 }
 
-.birthdayCard {
+.mainCard {
   padding: 10px 20px 10px 20px;
   width: 400px;
   height: max-content;
@@ -74,4 +74,8 @@ button:hover {
 .age {
   font-size: .9rem;
   color: #617d98;
+}
+
+.adduserbtn {
+  margin-top: 10px;
 }
