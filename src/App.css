@@ -79,3 +79,8 @@ button:hover {
 .adduserbtn {
   margin-top: 10px;
 }
+
+input {
+  height: 30px;
+  margin-bottom: 10px;
+}

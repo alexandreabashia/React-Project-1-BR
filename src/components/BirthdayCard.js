@@ -12,17 +12,18 @@ function BirthdayCard({ users, setUsers }) {
     return (
         <Router>
             <Switch>
-            <div className='mainCard'>
-                <Route path="/" exact>
-                    <h3 className='birthdayCount'>{users.length} Birthdays today</h3>
-                    <User users={users} setUsers={setUsers} />
-                    <button onClick={onClearlistener}>Clear All</button>
-                    <Link to="/add"><button>Add user birthday</button></Link>
-
-                </Route>
-                <Route path="/add" exact component={AddUserCard} />
-            </div>
-        </Switch>
+                <React.Fragment>
+                    <div className='mainCard'>
+                        <Route path="/" exact>
+                            <h3 className='birthdayCount'>{users.length} Birthdays today</h3>
+                            <User users={users} setUsers={setUsers} />
+                            <Link to="/add"><button>Add User</button></Link>
+                            <button onClick={onClearlistener}>Clear All</button>
+                        </Route>
+                        <Route path="/add" exact component={AddUserCard} />
+                    </div>
+                </React.Fragment>
+            </Switch>
         </Router>
     )
 }
