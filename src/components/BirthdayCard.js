@@ -20,7 +20,10 @@ function BirthdayCard({ users, setUsers }) {
                             <Link to="/add"><button>Add User</button></Link>
                             <button onClick={onClearlistener}>Clear All</button>
                         </Route>
-                        <Route path="/add" exact component={AddUserCard} />
+                        {/* <Route path="/add" exact component={AddUserCard} /> */}
+                        <Route path='/add'>
+                            <AddUserCard users={users} />
+                        </Route>
                     </div>
                 </React.Fragment>
             </Switch>

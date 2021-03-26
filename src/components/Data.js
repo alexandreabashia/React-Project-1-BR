@@ -5,6 +5,9 @@ export default [
         age: 29,
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+        month: 3,
+        day: 27,
+        birthday: ''
     },
     {
         id: 2,
@@ -12,6 +15,9 @@ export default [
         age: 32,
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg',
+        month: 4,
+        day: 27,
+        birthday: ''
     },
     {
         id: 3,
@@ -19,19 +25,20 @@ export default [
         age: 36,
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
+        month: 5,
+        day: 27,
+        birthday: ''
     },
     {
         id: 4,
-        name: 'Sean Walsh',
-        age: 34,
+        name: 'Alexandre Abashia',
+        age: 27,
         image:
-            'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-    },
-    {
-        id: 5,
-        name: 'Lola Gardner',
-        age: 29,
-        image:
-            'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+            'https://res.cloudinary.com/onoffon/image/upload/v1616757261/14875083_889199134545304_286774932_n_fzlkoi.jpg',
+        month: 6,
+        day: 27,
+        birthday: ''
     }
 ]
+
+// https://res.cloudinary.com/onoffon/image/upload/v1616757261/14875083_889199134545304_286774932_n_fzlkoi.jpg
