@@ -7,7 +7,6 @@ export default [
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
         month: 3,
         day: 27,
-        birthday: ''
     },
     {
         id: 2,
@@ -17,7 +16,6 @@ export default [
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg',
         month: 4,
         day: 27,
-        birthday: ''
     },
     {
         id: 3,
@@ -27,7 +25,6 @@ export default [
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
         month: 5,
         day: 27,
-        birthday: ''
     },
     {
         id: 4,
@@ -35,9 +32,8 @@ export default [
         age: 27,
         image:
             'https://res.cloudinary.com/onoffon/image/upload/v1616757261/14875083_889199134545304_286774932_n_fzlkoi.jpg',
-        month: 6,
+        month: 10,
         day: 27,
-        birthday: ''
     }
 ]
 
