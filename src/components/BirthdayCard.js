@@ -15,15 +15,12 @@ function BirthdayCard({ users, setUsers }) {
                 <React.Fragment>
                     <div className='mainCard'>
                         <Route path="/" exact>
-                            <h3 className='birthdayCount'>{users.length} Birthdays today</h3>
+                            <h3 className='birthdayCount'>Number of users: {users.length}</h3>
                             <User users={users} setUsers={setUsers} />
                             <Link to="/add"><button>Add User</button></Link>
                             <button onClick={onClearlistener}>Clear All</button>
                         </Route>
-                        {/* <Route path="/add" exact component={AddUserCard} /> */}
-                        <Route path='/add'>
-                            <AddUserCard users={users} />
-                        </Route>
+                        <Route path='/add'><AddUserCard users={users} /></Route>
                     </div>
                 </React.Fragment>
             </Switch>

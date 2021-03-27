@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 
 function User({ users, setUsers }) {
-
     useEffect(() => {
-        calcBirthday(); 
+        calcBirthday();
     }, [])
 
     function calcBirthday() {
@@ -15,15 +14,14 @@ function User({ users, setUsers }) {
             if (today.getMonth() == 11 && today.getDate() > 25) {
                 birthDay.setFullYear(birthDay.getFullYear() + 1);
             }
-
             var one_day = 1000 * 60 * 60 * 24;
-            return  {
-                ...user, birthDay: Math.ceil((birthDay.getTime() - today.getTime()) / (one_day)) + " days before your birthday"
+            return {
+                ...user, dayCount: Math.ceil((birthDay.getTime() - today.getTime()) / (one_day))
             }
         }))
-        
+
     }
-    
+
     return (
         <div>
             {
@@ -34,11 +32,12 @@ function User({ users, setUsers }) {
                             <div className='nameandage'>
                                 <div className='name'>{user.name}</div>
                                 <div className='info'>{user.age} Years</div>
-                                <div className='info'>{user.birthDay}</div>
+                                <div className='info'>{user.dayCount} days before your birthday</div>
                             </div>
                         </div>
                     )
                 })
+
             }
         </div>
     )
