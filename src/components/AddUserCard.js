@@ -6,6 +6,8 @@ function AddUserCard({ users, setUsers }) {
     const [name, setName] = useState();
     const [imageLink, setimageLink] = useState();
     const [birthDay, setbirthDay] = useState();
+    var month = 0;
+    var day = 0;
 
     function setNamef(e){
         setName(e.target.value)
@@ -15,12 +17,21 @@ function AddUserCard({ users, setUsers }) {
         setimageLink(e.target.value)
     }
     function setDatef(e){
-        setbirthDay(e.target.value.slice(5))
+        month = e.target.value.replace(/-0+/g, '-').slice(5,6);
+        day = e.target.value.replace(/-0+/g, '-').slice(7,10);
+
     }
 
     function onSubmit(){
-        setUsers(users.concat({id: users.length + 1, name: name, image: imageLink}))
-        console.log(users.length, users);
+        setUsers(users.concat({
+            id: users.length + 1, 
+            name: name, 
+            image: imageLink, 
+            month: month,
+            day: day
+        }))
+        // console.log('Day: ' + day + ' ' + 'Month: ' + month);
+
     }
 
     return (

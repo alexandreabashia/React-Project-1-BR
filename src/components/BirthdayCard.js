@@ -2,7 +2,7 @@ import React from 'react';
 import AddUserCard from './AddUserCard';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function BirthdayCard({ users, setUsers, usersData }) {
+function BirthdayCard({ users, setUsers }) {
 
     const userComponent = users.map(function (user) {
         return (
