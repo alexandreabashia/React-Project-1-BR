@@ -1,12 +1,12 @@
-export default [
+export const usersData = [
     {
         id: 1,
         name: 'Bertie Yates',
-        age: 29,
+        age: 31,
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
         month: 3,
-        day: 29,
+        day: 30,
     },
     {
         id: 2,
@@ -34,7 +34,8 @@ export default [
             'https://res.cloudinary.com/onoffon/image/upload/v1616757261/14875083_889199134545304_286774932_n_fzlkoi.jpg',
         month: 10,
         day: 19,
-    }
+    },
+    
 ]
 
 // https://res.cloudinary.com/onoffon/image/upload/v1616757261/14875083_889199134545304_286774932_n_fzlkoi.jpg
