@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <BirthdayCard users={users} setUsers={setUsers} calcBirthday={calcBirthday} />
+      <BirthdayCard users={ users } setUsers={ setUsers } usersData={ usersData } />
     </div>
   );
 }

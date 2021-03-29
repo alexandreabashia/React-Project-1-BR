@@ -2,7 +2,7 @@ import React from 'react';
 import AddUserCard from './AddUserCard';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function BirthdayCard({ users, setUsers, calcBirthday }) {
+function BirthdayCard({ users, setUsers, usersData }) {
 
     const userComponent = users.map(function (user) {
         return (
@@ -32,7 +32,7 @@ function BirthdayCard({ users, setUsers, calcBirthday }) {
                             <Link to="/add"><button>Add User</button></Link>
                             <button onClick={onClearlistener}>Clear All</button>
                         </Route>
-                        <Route path='/add'><AddUserCard users={users} setUsers={setUsers} calcBirthday={calcBirthday} /></Route>
+                        <Route path='/add'><AddUserCard users={users} setUsers={setUsers} /></Route>
                     </div>
                 </React.Fragment>
             </Switch>
@@ -40,4 +40,4 @@ function BirthdayCard({ users, setUsers, calcBirthday }) {
     )
 }
 
-export default BirthdayCard
+export default BirthdayCard;

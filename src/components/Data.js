@@ -33,7 +33,7 @@ export const usersData = [
         image:
             'https://res.cloudinary.com/onoffon/image/upload/v1616757261/14875083_889199134545304_286774932_n_fzlkoi.jpg',
         month: 10,
-        day: 19,
+        day: 22,
     },
     
 ]
