@@ -1,5 +1,5 @@
 .App {
-  background-color: #f28ab2;
+  background: linear-gradient(to right, #200122, #6f0000);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ button {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  background-color: #f28ab2;
+  background-color: #051937;
   color: #ffffff;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
@@ -80,7 +80,12 @@ button:hover {
   margin-top: 10px;
 }
 
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
 input {
-  height: 30px;
+  height: 25px;
   margin-bottom: 10px;
 }
